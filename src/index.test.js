@@ -42,6 +42,7 @@ describe('OnLeaveIntent', () => {
     // simulate the user leaving the page
     document.dispatchEvent(new MouseEvent('mouseout', { relatedTarget: null }))
     document.dispatchEvent(new MouseEvent('mouseout', { relatedTarget: null }))
+    document.dispatchEvent(new MouseEvent('mouseout', { relatedTarget: null }))
     expect(callback).toHaveBeenCalledTimes(1)
   })
 })
